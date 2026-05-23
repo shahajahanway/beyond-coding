@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms tags</title>
+  </head>
+  <body>
+    <!-- <h1 style="text-align: center; font-size: 3rem">Forms</h1> -->
+    <!-- <br /> -->
+    <!-- <hr /> -->
+    <!-- <br /> -->
+    <!-- <form>
+      <fieldset>
+        <legend>Personal details</legend>
+        <br />
+        <label for="username">Username</label><br />
+        <input  id="text" placeholder="Enter your Username" /><br />
+        <br />
+        <label for="email">Email</label><br />
+        <input  type="email" placeholder="Enter your Email " />
+        <br /><br />
+        <label for="age">Age</label><br />
+        <input  id="age" placeholder="Enter your Age" />
+      </fieldset>
+
+      <label for="name">Your name?</label>
+      <input  id="name" type="text" placeholder="Enter your name" />
+
+      <label for="courses">Select Course</label>
+
+      <select name="" id="courses">
+        <optgroup label="PC Languages">
+          <option>Html</option>
+          <option>Css</option>
+          <option>JavaScript</option>
+        </optgroup>
+
+        <optgroup label="Human Languages">
+          <option>Html</option>
+          <option>Css</option>
+          <option>JavaScript</option>
+        </optgroup>
+      </select>
+
+      <br /><br />
+      <label for="reviews">Reviews</label>
+      <textarea id="reviews" rows="3"></textarea>
+
+      <input  type="date" />
+      <input  type="time" />
+      <input  type="radio" />
+      <input  type="datetime" />
+      <input  type="color" />
+      <input  type="range" max="100" value="20" id="" />
+
+      <button>Submite Form</button>
+    </form> -->
+    <!-- <br><hr> -->
+    <h2 style="text-align: center">Student Registration form</h2>
+    <hr />
+
+    <form >
+      <fieldset>
+        <legend>Personal Info</legend>
+
+        <label for="name">Name</label><br />
+        <input 
+          type="text"
+          id="name"
+          required
+          placeholder="Enter your name..."
+        /><br /><br />
+
+        <label for="email">Email</label><br />
+        <input 
+          type="email"
+          required
+          id="email"
+          placeholder="Enter your email..."
+        /><br /><br />
+
+        <label for="name">Phone number</label><br />
+        <input 
+          type="text"
+          required
+          id="name"
+          placeholder="Enter your Number..."
+        /><br /><br />
+        <label for="studentimage">Student Photo</label>
+        <input  type="file" type="image" id="studentimage">
+      </fieldset>
+      <br />
+      <br />
+      <fieldset>
+        <legend>Address Details</legend>
+
+        <label for="addressline1">Address</label>
+        <textarea
+          name=""
+          id="addressline1"
+          placeholder="address"
+          rows="4"
+        ></textarea><br />
+
+        <label for="city">City</label>
+        <select id="city">
+          <option>City</option>
+          <option>Siliguri</option>
+          <option>Gurguam</option>
+          <option>Mumbai</option>
+        </select>
+        <br /><br />
+        <label for="states">States</label>
+        <select id="states">
+          <option>Choose States</option>
+          <option>West Bangal</option>
+          <option>Up</option>
+          <option>UK</option>
+          <option>Bihar</option>
+        </select>
+      </fieldset>
+      <br /><br />
+      <label for="courses">Courses</label>
+      <select id="courses">
+        <optgroup label="Frontend">
+          <option>Html</option>
+          <option>Css</option>
+          <option>Js</option>
+        </optgroup>
+        <optgroup label="Backend">
+          <option>Advance JavaScript</option>
+          <option>Nodejs</option>
+          <option>MongoDB</option>
+        </optgroup>
+      </select>
+      <br /><br />
+      <button>Submite form</button>
+    </form>
+  </body>
+</html>
