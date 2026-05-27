@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(182, 166, 166);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+h1{
+    text-align: center;
+    font-size: 3rem;
+}
+.container{
+    position: relative;
+    height: 50%;
+    width: 50%;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.diff{
+    height: 50%;
+    width: 30%;
+    position: absolute;
+    background-color: blue;
+    z-index: 1;
+}
+.diff2{
+
+    height: 30%;
+    width: 50%;
+    background-color: red;
+    z-index: 2;
+}
