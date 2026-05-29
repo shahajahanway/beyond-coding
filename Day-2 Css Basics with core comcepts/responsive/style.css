@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+
+}
+div{
+    height: 50vmin;
+    width: 50vmin;
+    background-color: lightcoral;
+    font-size: 20px;
+}
+
+
+p{
+    /* font-size: 5vmax; */
+    font-size: 5vmin;
+}
