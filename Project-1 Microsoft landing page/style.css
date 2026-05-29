@@ -1,120 +1,176 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #ffffff;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+}
+main {
+  height: 80%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 215px 12px 215px;
+}
+nav .leftnav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+nav .leftnav img {
+  margin-left: 20px;
+}
+nav p {
+  font-size: 13px;
+}
+nav .rightnav {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+.ri-search-line {
+  font-size: 15px;
+}
+.ri-shopping-cart-line {
+  font-size: 17px;
+}
+.profile {
+  height: 30px;
+  width: 30px;
+  background-color: red;
+  border-radius: 50px;
+  background-image: url(https://images.unsplash.com/photo-1668293750324-bd77c1f08ca9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YW5pbWV8ZW58MHx8MHx8fDA%3D);
+  background-size: cover;
+  background-position: center;
+}
+section {
+  width: 95%;
+  align-self: center;
+  position: relative;
+}
+section img {
+  width: 100%;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: absolute;
+  top: 10%;
+  left: 9%;
+  background-color: #ffffff;
+  padding: 40px;
+}
+.content h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.content p {
+  line-height: 1.5;
+  letter-spacing: 1px;
+  font-size: 14px;
+}
+.content button {
+  width: fit-content;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #0067b8;
+  color: white;
+  border: none;
+}
+.container3 {
+  height: 20%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.container3 .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 2;
+  font-weight: 600;
+}
+.container3 .box a {
+  text-decoration: none;
+  color: #0067b8;
+}
+.container4 {
+  height: 55%;
+  width: 100%;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 200px 0px 200px;
+  
+}
+.container4 .box {
+  height: 80%;
+  width: 23%;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.34);
+  border-radius: 5px;
+}
+.container4 .box .topImg {
+  width: 100%;
+}
+.container4 .box .boxcontent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 55%;
+  padding: 20px;
+}
+.container4 .box .boxcontent .boxText {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 
+.boxcontent .boxText h1 {
+  font-size: 28px;
+  font-weight: 500;
 }
-html,body{
-    height: 100%;
-    width: 100%;
-    background-color: #ffffff;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+.boxcontent .boxText p {
+  letter-spacing: 0.5px;
+  font-weight: 400;
+  line-height: 20px;
+  font-size: 15px;
 }
-main{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-
-
+.boxcontent button {
+  width: fit-content;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  background-color: #0067b8;
+  color: #ffffff;
 }
-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 12px 215px 12px 215px;
-
-
-}
-nav .leftnav{ 
-    display: flex;
-    align-items: center;
-    gap: 20px;
-
-}
-nav .leftnav img{
-    margin-left: 20px;
-}
-nav p{
-    font-size: 13px;
-}
-nav .rightnav{
-    display: flex;
-    gap: 15px;
-    align-items: center;
-
-}
-.ri-search-line{
-    font-size: 15px;
-}
-.ri-shopping-cart-line{
-    font-size: 17px;
-}
-.profile{
-    height: 30px;
-    width: 30px;
-    background-color: red;
-    border-radius: 50px;
-    background-image: url(https://images.unsplash.com/photo-1668293750324-bd77c1f08ca9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YW5pbWV8ZW58MHx8MHx8fDA%3D);
-    background-size: cover;
-    background-position: center;
-}
-section{
-    width: 95%;
-    align-self: center;
-    position: relative;
-    
-}
-section img{
-    width: 100%;
-    
-    
-}
-.content{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    position: absolute;
-    top: 10%;
-    left: 9%;
-    background-color: #ffffff;
-    padding: 40px;
-
-}
-.content h1{
-    font-size: 2.5rem;
-    font-weight: 500;
-    letter-spacing: 1px;
-}
-.content p{
-    line-height: 1.5;
-    letter-spacing: 1px;
-    font-size: 14px;
-}
-.content button{
-    width: fit-content;
-    padding: 10px;
-    font-size: 16px;
-    background-color: #0067b8;
-    color: white;
-    border: none;
-}
-.container3{
-    height: 20%;
-    width: 100%;
-    display: flex;
-   justify-content: center;
-   align-items: center;
-   gap: 50px;
-}
-.container3 .box{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    line-height: 2;
-    font-weight: 600;
-}
-.container3 .box a{
-    text-decoration: none;
-    color: #0067b8;
+.for-business {
+    padding-top: 50px;
+  padding-left: 220px;
+  
 }
